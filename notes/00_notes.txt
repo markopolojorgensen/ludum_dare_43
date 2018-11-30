@@ -1,40 +1,5 @@
-super ultra great delicious wonderful global notes file
-
-
-grand ideas TODO
-  think about lotr music project
-  palette analysis (crux swarm, predict palette)
-  Beast's Color Tool?
-DONE
-
-aseprite scripting TODO
-  tween script for easier gifs
-DONE
-
-
-
-prestrim TODO
-  Discord / Tweet promo ad libs
-  vote for themes!
-  write preemptive addon apology
-  test stream! audio / video / recording
-  figure out twitch labels or categories or whatever
-  maybe a new overlay :D
-  twitch link to fight on the waves
-  itch page
-DONE
-  chat rules: no swears pls
-  chat rules: don't forget to spam panicBasket and OhMyDog if the stream explodes
-
-post-submission TODO
-  edit stream super speed & post to youtube
-  link all the things (twitter youtube twitch ldjam facebook? etc)
-
-
-
-project TODO
-  easy access to plugins
-  update butler script for easy pushing
+TODO
+  aseprite tween script for easier gifs
 DONE
   "prefab" logo intro
   make empty project
@@ -44,3 +9,32 @@ DONE
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+grand ideas TODO
+  think about lotr music project
+  palette analysis (crux swarm, predict palette)
+  Beast's Color Tool?
+DONE

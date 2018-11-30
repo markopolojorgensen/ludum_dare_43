@@ -17,7 +17,6 @@ func unblur():
 	$Control/AnimatedSprite.play()
 
 func exit_intro():
-	get_tree().quit()
 	get_tree().change_scene("res://game.tscn")
 
 func resize_window():

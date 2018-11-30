@@ -1,0 +1,66 @@
+TODO
+  write blurb
+  github page / initial push
+DONE
+  update butler script for easy pushing
+  figure out windows godot build :(
+  itch page
+  vote for themes!
+
+
+Publish Hour
+  push to github
+  push to itch
+    gifs
+  write ldjam description
+    gifs
+  edit stream super speed & post to youtube
+  update links everywhere
+
+
+
+
+twitter tagerinos
+  #indiedev #gamedev #GodotEngine #pixelart #aseprite
+  #indiedev #gamedev #pixelart #aseprite #GodotEngine #twitch
+  #indiedev
+  #gamedev
+  #GodotEngine
+  #pixelart
+  #aseprite
+  #pico8
+  #sunvox?
+  @aseprite?
+
+
+=================================================
+===================== BLURB =====================
+=================================================
+
+A Fight on the Waves is an autoscrolling boss fight. Dodge from island to
+island as the space you have to maneuver shrinks. Destroy the boss before you
+fall prey to it!
+
+=================================================
+===================== LINKS =====================
+=================================================
+
+Links (from everything to everything else)
+  spiel
+    This is a submission for [Ludum Dare 42](https://ldjam.com/events/ludum-dare/42/a-fight-on-the-waves).
+    Download the game on [itch.io](https://markopolodev.itch.io/a-fight-on-the-waves)!
+    Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_42).
+    Development Timelapse on [youtube](https://youtu.be/q9Y3624VRsY).
+    Development Vods on [Twitch](https://www.twitch.tv/markopolodev/collections).
+    I'm on [Twitter](https://twitter.com/markopolodev).
+    I'm on [Twitch](https://www.twitch.tv/markopolodev)!
+    music on [Soundcloud](linkerino)
+  link locations
+    itch.io
+    LDJam page
+    Github / readme
+    Twitter
+    Twitch
+    youtube: https://youtu.be/q9Y3624VRsY
+    soundcloud
+

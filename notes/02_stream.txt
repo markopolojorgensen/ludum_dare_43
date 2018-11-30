@@ -1,0 +1,99 @@
+TODO
+  test stream! audio / video / recording
+  figure out twitch labels or categories or whatever
+  maybe a new overlay
+  better sub emote
+DONE
+  Discord / Tweet / twitch title / generic promo ad libs
+  twitch link to fight on the waves
+  chat rules: no swears pls
+  chat rules: don't forget to spam panicBasket and OhMyDog if the stream explodes
+
+
+post-submission
+  play lots of games?
+  upload vods
+
+
+
+
+
+PulseAudio Jack shenanigans:
+  set up jack sinks:
+    # pactl load-module module-jack-sink client_name=pulse_sunvox_sink connect=no
+    pactl load-module module-jack-sink client_name=pulse_obs_monitors_sink connect=no
+    pactl load-module module-jack-sink client_name=pulse_desktop_sink connect=no
+    pactl load-module module-jack-sink client_name=pulse_alerts_sink connect=no
+    pactl list sinks
+    pacmd set-default-sink whatever_number
+
+  in pulse:
+    route sunvox -> pulse_sunvox_sink
+    route cmus -> pulse_desktop_sink
+    route obs monitors -> pulse_obs_monitors_sink
+    alerts are automatically routed to the default sink
+
+  in Jack:
+    pulse_obs_monitors_sink -> system
+    pulse_sunvox_sink       -> system
+    pulse_sunvox_sink  -> obs_jack_sunvox
+    pulse_desktop_sink -> obs_jack_desktop
+    pulse_alerts_sink  -> obs_jack_alerts
+
+  in OBS:
+    Mic
+    obs_jack_sunvox side chained by obs_jack_alerts
+    obs_jack_alerts side chained by obs_jack_alerts
+    
+
+
+
+
+
+
+stream pre-live checklist
+  have beverage
+  take out one headphone
+  start recording
+  hear music
+  "actual desktop audio" shows signs of life
+  mic input shows signs of life
+  hear sunvox
+  hear game audio
+  hear notification sounds
+  stop recording
+  put headphone back in
+  see screen grab
+  see webcam
+  see todo window grab
+  see notifications
+  see event list updates
+
+  stream title
+  test nightbot
+  live notification
+  music ready to go
+  spam discord channels
+
+
+
+=================================================
+===================== Titles ====================
+=================================================
+
+Working on a shoot-em-up based on a joy of pixels episode :D https://www.twitch.tv/markopolodev
+a nonchalant wizard doing nonchalant shoot-em-up work https://www.twitch.tv/markopolodev
+working on SCREEN SHAKE and other less important things :D https://www.twitch.tv/markopolodev
+sleepy morning stream working on sleepy morning camera focus logic :D https://www.twitch.tv/markopolodev
+parallax floaty space rocks, ludum dare hype :thumbsup: https://www.twitch.tv/markopolodev
+ludum dare hype and spaceship engine animations :thumbsup: https://www.twitch.tv/markopolodev
+Ludum Dare Tower Defense Platformer or Whatever :thumbsup: https://www.twitch.tv/markopolodev
+Dawn of the Final (Compo) Day: 9 hours remain :thumbsup: https://www.twitch.tv/markopolodev
+Working on a metroidvania tower defense I started during ludum dare :D https://www.twitch.tv/markopolodev
+Crux Swarm: setting up that sweet sweet godot autotile system :thumbsup: https://www.twitch.tv/markopolodev
+Crux Swarm: the adventure continues :thumbsup: https://www.twitch.tv/markopolodev
+A nonchalant (afilliate!) wizard building a better jump for tomorrow https://www.twitch.tv/markopolodev
+Beyond ludum dare: crux swarm refactoring, results discussion: https://www.twitch.tv/markopolodev
+
+
+

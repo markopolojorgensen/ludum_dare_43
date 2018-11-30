@@ -11,6 +11,7 @@ DONE
 Publish Hour
   push to github
   push to itch
+    (mac runnable shenanigans)
     gifs
   write ldjam description
     gifs

@@ -1,7 +1,7 @@
 TODO
   write blurb
-  github page / initial push
 DONE
+  github page / initial push
   update butler script for easy pushing
   figure out windows godot build :(
   itch page

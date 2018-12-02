@@ -1,19 +1,78 @@
 TODO
-  aseprite tween script for easier gifs
+  gas trap code
+  pipe pond art
+  business demon battle
+  dead bodies
+  story elements
+  hearts
+  sound effects for everything :(
+  animated smog in cave level
+  animated water droplets in pond level
+  fade between levels that just changes prota palette?
 DONE
+  how do walls work?
+  machinery animation
+  sword art
+  gas cloud
+  diamond attack
+  miner enemies (diamond cloud)
+  player movement animations
   "prefab" logo intro
   make empty project
 
 
+so turns out I'm still bad at movement animations
+  player is now a particle effect
 
 
 
+Sacrifices Must be Made
+  name
+    ye mighty
+    despair
+    revenge of the wild
+    X Best served cold
+top down dungeon crawler
+
+you don't really make sacrifices
+other things make sacrifices
+  business make sacrifices for you
+    a business man who turns slowly more and more into a monster
+  you are a human who has finally snapped and is going to go on a killing spree
+    you are a deer who was hit by a car and somehow you possessed the body of the driver
+    he was on his way to a business meeting and had brought a sword as a gift
+    (you kill exactly one entity, who was a human and turned into a monster)
+      I guess you kill a bunch of robots too?
+
+
+need a health element?
+  hearts?
+    colored per environment
+    full health at beginning of each segment
+    checkpoint at beginning of each segment
+
+
+fade in story elements
+  tweened opacity
+  parallax position
 
 
 
+"Nobody likes the bugs that live here anyway. What else could this place be good for? Sacrifices must be made."
+  cave section w/ damaging gas traps
+    teaches movement, traps, intro to sword
+"They'll find somewhere else to live. It's not like anyone ever comes here. Sacrifices must be made."
+  pipes pouring garbage into lakes, floating islands style
+    teaches dodge, combat, enemies
+"What unproductive members of society. Who cares about these people? SACRIFICES MUST BE MADE."
+  clearcut woods / glorious business arena with a lot of dead bodies / gas traps
+  business man fight
+    challenges lessons
 
-
-
+whenever you die, get a nasty message
+  "It's not really my problem..."
+  "better not to speak up..."
+  "I'm sure someone else will take care of this..."
 
 
 

@@ -1,9 +1,527 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=82 format=2]
 
 [ext_resource path="res://game.gd" type="Script" id=1]
+[ext_resource path="res://player/player.gd" type="Script" id=2]
+[ext_resource path="res://player/frames/player_00.png" type="Texture" id=3]
+[ext_resource path="res://player/frames/player_01.png" type="Texture" id=4]
+[ext_resource path="res://player/frames/player_02.png" type="Texture" id=5]
+[ext_resource path="res://player/frames/player_03.png" type="Texture" id=6]
+[ext_resource path="res://player/frames/player_04.png" type="Texture" id=7]
+[ext_resource path="res://player/frames/player_05.png" type="Texture" id=8]
+[ext_resource path="res://player/frames/player_06.png" type="Texture" id=9]
+[ext_resource path="res://player/frames/player_07.png" type="Texture" id=10]
+[ext_resource path="res://player/frames/player_08.png" type="Texture" id=11]
+[ext_resource path="res://player/frames/player_09.png" type="Texture" id=12]
+[ext_resource path="res://player/frames/player_10.png" type="Texture" id=13]
+[ext_resource path="res://player/frames/player_11.png" type="Texture" id=14]
+[ext_resource path="res://player/frames/player_12.png" type="Texture" id=15]
+[ext_resource path="res://player/frames/player_13.png" type="Texture" id=16]
+[ext_resource path="res://player/frames/player_14.png" type="Texture" id=17]
+[ext_resource path="res://player/frames/player_15.png" type="Texture" id=18]
+[ext_resource path="res://player/frames/player_16.png" type="Texture" id=19]
+[ext_resource path="res://player/frames/player_17.png" type="Texture" id=20]
+[ext_resource path="res://player/frames/player_18.png" type="Texture" id=21]
+[ext_resource path="res://player/frames/player_19.png" type="Texture" id=22]
+[ext_resource path="res://player/frames/player_20.png" type="Texture" id=23]
+[ext_resource path="res://player/frames/player_21.png" type="Texture" id=24]
+[ext_resource path="res://player/frames/player_22.png" type="Texture" id=25]
+[ext_resource path="res://player/frames/player_23.png" type="Texture" id=26]
+[ext_resource path="res://player/frames/player_24.png" type="Texture" id=27]
+[ext_resource path="res://player/frames/player_25.png" type="Texture" id=28]
+[ext_resource path="res://player/frames/player_26.png" type="Texture" id=29]
+[ext_resource path="res://player/frames/player_27.png" type="Texture" id=30]
+[ext_resource path="res://player/frames/player_28.png" type="Texture" id=31]
+[ext_resource path="res://player/frames/player_29.png" type="Texture" id=32]
+[ext_resource path="res://player/frames/player_30.png" type="Texture" id=33]
+[ext_resource path="res://player/frames/player_31.png" type="Texture" id=34]
+[ext_resource path="res://player/frames/player_32.png" type="Texture" id=35]
+[ext_resource path="res://player/frames/player_33.png" type="Texture" id=36]
+[ext_resource path="res://player/frames/player_34.png" type="Texture" id=37]
+[ext_resource path="res://player/frames/player_35.png" type="Texture" id=38]
+[ext_resource path="res://player/frames/player_36.png" type="Texture" id=39]
+[ext_resource path="res://player/frames/player_37.png" type="Texture" id=40]
+[ext_resource path="res://player/frames/player_38.png" type="Texture" id=41]
+[ext_resource path="res://player/frames/player_39.png" type="Texture" id=42]
+[ext_resource path="res://player/frames/player_40.png" type="Texture" id=43]
+[ext_resource path="res://player/frames/player_41.png" type="Texture" id=44]
+[ext_resource path="res://player/frames/player_42.png" type="Texture" id=45]
+[ext_resource path="res://player/frames/player_43.png" type="Texture" id=46]
+[ext_resource path="res://player/frames/player_44.png" type="Texture" id=47]
+[ext_resource path="res://player/frames/player_45.png" type="Texture" id=48]
+[ext_resource path="res://player/frames/player_46.png" type="Texture" id=49]
+[ext_resource path="res://player/frames/player_47.png" type="Texture" id=50]
+[ext_resource path="res://player/frames/player_48.png" type="Texture" id=51]
+[ext_resource path="res://player/frames/player_49.png" type="Texture" id=52]
+[ext_resource path="res://player/frames/player_50.png" type="Texture" id=53]
+[ext_resource path="res://player/frames/player_51.png" type="Texture" id=54]
+[ext_resource path="res://player/frames/player_52.png" type="Texture" id=55]
+[ext_resource path="res://player/frames/player_53.png" type="Texture" id=56]
+[ext_resource path="res://player/frames/player_54.png" type="Texture" id=57]
+[ext_resource path="res://player/frames/player_55.png" type="Texture" id=58]
+[ext_resource path="res://player/frames/player_56.png" type="Texture" id=59]
+[ext_resource path="res://player/frames/player_57.png" type="Texture" id=60]
+[ext_resource path="res://player/frames/player_58.png" type="Texture" id=61]
+[ext_resource path="res://player/frames/player_59.png" type="Texture" id=62]
+[ext_resource path="res://player/frames/player_60.png" type="Texture" id=63]
+[ext_resource path="res://addons/movement/top_down_movement.gd" type="Script" id=64]
+[ext_resource path="res://addons/movement/node.svg" type="Texture" id=65]
+[ext_resource path="res://addons/movement/user_input_direction.gd" type="Script" id=66]
+[ext_resource path="res://addons/camera_limiter/focus_limiter.gd" type="Script" id=67]
+[ext_resource path="res://addons/camera_limiter/node.svg" type="Texture" id=68]
+[ext_resource path="res://cave/cave_wall_bot.png" type="Texture" id=69]
+[ext_resource path="res://cave/cave_wall_top.png" type="Texture" id=70]
+[ext_resource path="res://cave/cave_floor.png" type="Texture" id=71]
+[ext_resource path="res://addons/camera_limiter/camera_limiting_area.gd" type="Script" id=72]
+[ext_resource path="res://addons/camera_limiter/area_2d.svg" type="Texture" id=73]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 15.0
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 1000, 500 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 700, 500 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 700, 900 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 650, 800 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 500, 800 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 800, 500 )
 
 [node name="game" type="Node" index="0"]
 
 script = ExtResource( 1 )
+
+[node name="world" type="Node2D" parent="." index="0"]
+
+[node name="y_sort" type="YSort" parent="world" index="0"]
+
+sort_enabled = true
+
+[node name="player" type="RigidBody2D" parent="world/y_sort" index="0"]
+
+editor/display_folded = true
+position = Vector2( 890, -90 )
+input_pickable = false
+collision_layer = 2
+collision_mask = 13
+mode = 2
+mass = 1.0
+friction = 0.5
+bounce = 0.0
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = 5.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 2 )
+_sections_unfolded = [ "Collision", "Linear", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/y_sort/player" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="animated_sprite" type="AnimatedSprite" parent="world/y_sort/player" index="1"]
+
+position = Vector2( 0, -50 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 41
+_sections_unfolded = [ "Transform" ]
+
+[node name="TopDownMovement" type="Node" parent="world/y_sort/player" index="2"]
+
+script = ExtResource( 64 )
+__meta__ = {
+"_editor_icon": ExtResource( 65 )
+}
+body_path = NodePath("..")
+direction_path = NodePath("../UserInputDirection")
+acceleration = 10000.0
+default_max_speed = 700.0
+
+[node name="UserInputDirection" type="Node" parent="world/y_sort/player" index="3"]
+
+script = ExtResource( 66 )
+__meta__ = {
+"_editor_icon": ExtResource( 65 )
+}
+
+[node name="camera_2d" type="Camera2D" parent="world/y_sort/player" index="4"]
+
+editor/display_folded = true
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 7.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.05
+drag_margin_top = 0.1
+drag_margin_right = 0.05
+drag_margin_bottom = 0.1
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = true
+_sections_unfolded = [ "Drag Margin", "Editor", "Smoothing" ]
+
+[node name="CameraLimiter" type="Node" parent="world/y_sort/player/camera_2d" index="0"]
+
+script = ExtResource( 67 )
+__meta__ = {
+"_editor_icon": ExtResource( 68 )
+}
+camera_path = NodePath("..")
+
+[node name="cave_wall_bot" type="StaticBody2D" parent="world/y_sort" index="1"]
+
+editor/display_folded = true
+position = Vector2( 4152, 1002 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="sprite" type="Sprite" parent="world/y_sort/cave_wall_bot" index="0"]
+
+position = Vector2( 0, -1000 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 69 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="collision_polygon_2d" type="CollisionPolygon2D" parent="world/y_sort/cave_wall_bot" index="1"]
+
+visible = false
+position = Vector2( 0, -20 )
+build_mode = 0
+polygon = PoolVector2Array( -3612, -792, -3542, -862, -3472, -862, -3412, -802, -3312, -782, -3242, -792, -3192, -812, -3122, -782, -3062, -692, -2922, -642, -2742, -642, -2662, -722, -2592, -762, -2492, -732, -2422, -642, -2282, -512, -2172, -432, -2112, -272, -2002, -182, -1832, -162, -1682, -142, -1572, -212, -1532, -292, -1522, -322, -1472, -352, -1392, -442, -1362, -482, -1302, -522, -1242, -632, -1202, -652, -1122, -612, -1072, -512, -1012, -432, -912, -402, -822, -292, -682, -232, -382, -152, -102, -172, 18, -272, 118, -312, 198, -442, 378, -472, 638, -512, 738, -472, 808, -402, 978, -302, 1168, -312, 1318, -482, 1378, -512, 1418, -422, 1448, -352, 1538, -292, 1638, -252, 1928, -182, 2338, -192, 2638, -182, 2768, -152, 2948, -162, 3318, -192, 3408, -212, 3498, -222, 3548, -312, 3618, -322, 3618, -172, 3448, -132, 2788, -72, 1998, -92, 1578, -172, 1338, -382, 1188, -222, 968, -222, 678, -422, 308, -372, 308, -222, -32, -92, -722, -152, -1012, -332, -1192, -542, -1452, -282, -1662, -72, -2152, -152, -2242, -342, -2472, -572, -2572, -682, -2732, -602, -2902, -592, -3102, -632, -3162, -732, -3352, -732, -3492, -782, -3662, -682, -3662, -792 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="circle_upper" type="CollisionPolygon2D" parent="world/y_sort/cave_wall_bot" index="2"]
+
+visible = false
+position = Vector2( 228, -212 )
+build_mode = 0
+polygon = PoolVector2Array( 610, -710, 550, -600, 610, -600, 680, -700, 780, -740, 910, -710, 960, -660, 1000, -580, 1040, -580, 1020, -650, 960, -730, 850, -790, 760, -790, 660, -760 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="appendix" type="CollisionPolygon2D" parent="world/y_sort/cave_wall_bot" index="3"]
+
+visible = false
+position = Vector2( 738, -532 )
+build_mode = 0
+polygon = PoolVector2Array( 770, -730, 670, -710, 530, -750, 460, -750, 430, -720, 520, -720, 650, -650, 810, -690, 890, -770, 900, -860, 830, -870, 820, -790 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cave_wall_top" type="StaticBody2D" parent="world/y_sort" index="2"]
+
+editor/display_folded = true
+position = Vector2( 4152, -998 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="sprite" type="Sprite" parent="world/y_sort/cave_wall_top" index="0"]
+
+position = Vector2( 0, 1000 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 70 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="left_big" type="CollisionPolygon2D" parent="world/y_sort/cave_wall_top" index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -3612, 678, -3552, 738, -3452, 768, -3282, 768, -3132, 708, -3072, 708, -2902, 788, -2782, 788, -2652, 718, -2602, 728, -2512, 728, -2382, 638, -2332, 568, -2282, 478, -2252, 358, -2242, 308, -2142, 278, -1992, 248, -1812, 228, -1692, 238, -1522, 248, -1342, 328, -1282, 408, -1272, 458, -1192, 558, -1152, 718, -1062, 818, -1012, 958, -962, 988, -892, 1198, -822, 1208, -772, 1238, -702, 1218, -632, 1108, -592, 1068, -532, 1058, -492, 998, -452, 878, -432, 758, -382, 648, -312, 608, -202, 618, -172, 648, -122, 828, -52, 948, 8, 1038, 108, 1088, 148, 1248, 208, 1298, 338, 1328, 568, 1308, 648, 1248, 688, 1138, 695.141, 1079.09, 718, 1038, 738, 1028, 768, 978, 788, 928, 848, 878, 928, 748, 988, 758, 1088, 758, 1148, 588, 1228, 568, 1298, 578, 1338, 558, 1358, 508, 1428, 488, 1518, 508, 1558, 558, 1568, 648, 1668, 658, 1638, 528, 1548, 428, 1418, 438, 1328, 458, 1268, 518, 1098, 548, 1058, 708, 898, 698, 748, 878, 668, 1028, 388, 1158, 88, 838, -242, 448, -802, 748, -1332, 138, -1922, 48, -2732, 288, -3612, 548, -3792, 568, -3792, 678, -3782, 1348, -3612, 1348 )
+
+[node name="circle_lower" type="CollisionPolygon2D" parent="world/y_sort/cave_wall_top" index="2"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 828, 1118, 778, 1168, 768, 1208, 768, 1298, 808, 1398, 928, 1468, 1048, 1468, 1198, 1428, 1278, 1328, 1288, 1208, 1238, 1138, 1028, 1368 )
+
+[node name="right_big" type="CollisionPolygon2D" parent="world/y_sort/cave_wall_top" index="3"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 1198, 728, 1148, 748, 1148, 858, 1208, 938, 1258, 958, 1358, 1068, 1378, 1198, 1398, 1248, 1438, 1348, 1558, 1488, 1598, 1518, 1638, 1568, 1678, 1598, 1858, 1608, 1918, 1568, 1958, 1508, 1978, 1388, 2028, 1348, 2048, 1298, 2048, 1168, 2078, 1128, 2138, 1108, 2348, 1128, 2568, 1128, 2688, 1098, 2808, 1108, 2878, 1128, 3138, 1128, 3258, 1108, 3408, 1128, 3428, 1168, 3428, 1268, 3488, 1348, 3508, 1428, 3538, 1448, 3558, 1498, 3588, 1508, 3668, 1508, 3668, 1468, 3598, 1458, 3448, 1038, 1998, 1038, 1778, 1528, 1268, 798 )
+
+[node name="ground_layer" type="CanvasLayer" parent="world" index="1"]
+
+editor/display_folded = true
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="cave_ground" type="Sprite" parent="world/ground_layer" index="0"]
+
+scale = Vector2( 20, 20 )
+texture = ExtResource( 71 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="camera_limits" type="Node2D" parent="world" index="2"]
+
+editor/display_folded = true
+visible = false
+
+[node name="CameraLimitArea" type="Area2D" parent="world/camera_limits" index="0"]
+
+editor/display_folded = true
+position = Vector2( 1450, -50 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 72 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_editor_icon": ExtResource( 73 )
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/camera_limits/CameraLimitArea" index="0"]
+
+shape = SubResource( 3 )
+
+[node name="limit_left" type="Position2D" parent="world/camera_limits/CameraLimitArea" index="1"]
+
+position = Vector2( -910, 0 )
+
+[node name="CameraLimitArea2" type="Area2D" parent="world/camera_limits" index="1"]
+
+editor/display_folded = true
+position = Vector2( 1450, -50 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 72 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_editor_icon": ExtResource( 73 )
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/camera_limits/CameraLimitArea2" index="0"]
+
+position = Vector2( -540, 0 )
+shape = SubResource( 4 )
+
+[node name="limit_top" type="Position2D" parent="world/camera_limits/CameraLimitArea2" index="1"]
+
+position = Vector2( -260, -550 )
+
+[node name="limit_bottom" type="Position2D" parent="world/camera_limits/CameraLimitArea2" index="2"]
+
+position = Vector2( -240, 540 )
+
+[node name="CameraLimitArea3" type="Area2D" parent="world/camera_limits" index="2"]
+
+editor/display_folded = true
+position = Vector2( 2440, 0 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 72 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_editor_icon": ExtResource( 73 )
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/camera_limits/CameraLimitArea3" index="0"]
+
+shape = SubResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_top" type="Position2D" parent="world/camera_limits/CameraLimitArea3" index="1"]
+
+position = Vector2( 10, -950 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_bottom" type="Position2D" parent="world/camera_limits/CameraLimitArea3" index="2"]
+
+position = Vector2( 30, 920 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CameraLimitArea4" type="Area2D" parent="world/camera_limits" index="3"]
+
+editor/display_folded = true
+position = Vector2( 3920, 230 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 72 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_editor_icon": ExtResource( 73 )
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/camera_limits/CameraLimitArea4" index="0"]
+
+shape = SubResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_top" type="Position2D" parent="world/camera_limits/CameraLimitArea4" index="1"]
+
+position = Vector2( -20, -770 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_bottom" type="Position2D" parent="world/camera_limits/CameraLimitArea4" index="2"]
+
+position = Vector2( -90, 660 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CameraLimitArea5" type="Area2D" parent="world/camera_limits" index="4"]
+
+editor/display_folded = true
+position = Vector2( 5260, 110 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 72 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_editor_icon": ExtResource( 73 )
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/camera_limits/CameraLimitArea5" index="0"]
+
+shape = SubResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_top" type="Position2D" parent="world/camera_limits/CameraLimitArea5" index="1"]
+
+position = Vector2( 340, -930 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_bottom" type="Position2D" parent="world/camera_limits/CameraLimitArea5" index="2"]
+
+position = Vector2( 330, 890 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CameraLimitArea6" type="Area2D" parent="world/camera_limits" index="5"]
+
+editor/display_folded = true
+position = Vector2( 6890, 430 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 72 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_editor_icon": ExtResource( 73 )
+}
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="world/camera_limits/CameraLimitArea6" index="0"]
+
+shape = SubResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_top" type="Position2D" parent="world/camera_limits/CameraLimitArea6" index="1"]
+
+position = Vector2( -20, -500 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="limit_bottom" type="Position2D" parent="world/camera_limits/CameraLimitArea6" index="2"]
+
+position = Vector2( -40, 460 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="stupid dumb stupid" type="Node2D" parent="." index="1"]
+
+position = Vector2( 16090, 490 )
 
 

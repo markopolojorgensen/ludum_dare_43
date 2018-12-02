@@ -1,4 +1,5 @@
 TODO
+  aseprite tween script for easier gifs
   write blurb
 DONE
   github page / initial push
@@ -37,6 +38,13 @@ twitter tagerinos
 =================================================
 ===================== BLURB =====================
 =================================================
+
+Tool section
+  aseprite
+  sunvox
+  godot
+  pixel fx designer
+
 
 A Fight on the Waves is an autoscrolling boss fight. Dodge from island to
 island as the space you have to maneuver shrinks. Destroy the boss before you

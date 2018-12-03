@@ -1,15 +1,29 @@
 TODO
-  gas trap code
-  pipe pond art
-  business demon battle
-  dead bodies
-  story elements
-  hearts
   sound effects for everything :(
+  music
+
+  checkpoint pre-boss
+
+  pond pipe art
   animated smog in cave level
+  smog gets less and less the more machines you destroy
   animated water droplets in pond level
   fade between levels that just changes prota palette?
 DONE
+  business demon battle
+  boss health
+  You Win!
+  hearts
+  game over
+  dead bodies
+  no dead turtle bodies
+  boss fight: each hit adds diamond enemies
+  boss fight flames
+  diamond enemies code
+  diamonds wander around the flames
+  story elements
+  sword code
+  gas trap code
   how do walls work?
   machinery animation
   sword art
@@ -28,9 +42,18 @@ so turns out I'm still bad at movement animations
 
 Sacrifices Must be Made
   name
+    slippery slope
+    What comes with the territory
+    comes with the territory
+    unforseen expenses
+    A Vocation's Outlay
+    Drawbacks
+    the cost of doing business
+    just good business
     ye mighty
     despair
     revenge of the wild
+    X dirty energy
     X Best served cold
 top down dungeon crawler
 
@@ -72,11 +95,22 @@ fade in story elements
 whenever you die, get a nasty message
   "It's not really my problem..."
   "better not to speak up..."
-  "I'm sure someone else will take care of this..."
+  "Someone else will take care of it..."
 
 
 
+"Sacrifices must be made."
+"SACRIFICES MUST BE MADE."
 
+"Nobody likes the bugs that live here anyway."
+"Plenty of other places just like this one."
+
+"It's not like anyone ever comes here."
+"What else could this place be good for?"
+"They'll find somewhere else to live."
+"Better them than me."
+"This is just the cost of doing business."
+"It's not like they were that important."
 
 
 

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cave/gas_trap/grate.gd" type="Script" id=1]
+[ext_resource path="res://cave/gas_trap/grate.png" type="Texture" id=2]
+
+[node name="grate" type="Node2D"]
+
+position = Vector2( 2230, 170 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="sprite" type="Sprite" parent="." index="0"]
+
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+

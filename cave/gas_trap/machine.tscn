@@ -1,0 +1,61 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://cave/gas_trap/machine.gd" type="Script" id=1]
+[ext_resource path="res://cave/gas_trap/machinery_light.png" type="Texture" id=2]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_00.png" type="Texture" id=3]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_01.png" type="Texture" id=4]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_02.png" type="Texture" id=5]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_03.png" type="Texture" id=6]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_04.png" type="Texture" id=7]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_05.png" type="Texture" id=8]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_06.png" type="Texture" id=9]
+[ext_resource path="res://cave/gas_trap/machine_bounce/machinery_bounce_07.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 50, 10 )
+
+[node name="machine" type="StaticBody2D"]
+
+input_pickable = false
+collision_layer = 5
+collision_mask = 0
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="light" type="Sprite" parent="." index="0"]
+
+position = Vector2( 50, -37.5 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="animated_sprite" type="AnimatedSprite" parent="." index="1"]
+
+position = Vector2( 0, -30 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 1 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( 0, -5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+
